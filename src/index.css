@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-tip {
+  background: white !important;
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-close-button {
+  color: #6b7280 !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  padding: 8px !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: #f3f4f6 !important;
+  border: none !important;
+  right: 12px !important;
+  top: 12px !important;
+  transition: all 0.2s ease !important;
+}
+
+.leaflet-popup-close-button:hover {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+  transform: scale(1.1) !important;
+}
+
+/* Map container enhancements */
+.leaflet-container {
+  font-family: inherit !important;
+}
+
+/* Custom marker animations */
+.custom-div-icon {
+  background: none !important;
+  border: none !important;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
