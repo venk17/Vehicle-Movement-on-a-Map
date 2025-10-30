@@ -1,8 +1,6 @@
-Perfect 👍 You’re working inside **Bolt.new (React + Vite + Leaflet)** with this project structure. Based on your setup and screenshot, here’s a ready-to-use **`README.md`** file for your project.
 
----
 
-### 🧭 **README.md**
+
 
 ```markdown
 # 🚗 React Vehicle Route Simulation
