@@ -1,7 +1,4 @@
 
-
-
-
 ```markdown
 # 🚗 React Vehicle Route Simulation
 
